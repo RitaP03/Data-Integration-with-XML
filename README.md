@@ -5,6 +5,42 @@ The system consolidates country information into a structured XML document, ensu
 
 ---
 
+## 🚀 Setup / Execution
+
+1. Open the project folder DataIntegration_Project/ in **Eclipse, IntelliJ IDEA**, or another Java IDE.
+2. Ensure **Java 11** (or higher) and the required XML libraries (JAXP, XQuery processor) are configured.
+3. Run the main Java class to start the data integration process.
+4. The program will extract data from Wikipedia and DB-City, process it, and generate a validated XML file.
+5. You can then use the provided XSLT and XQuery scripts to transform and query the XML data.
+6. After these steps, the system will produce a structured XML dataset ready for analysis or visualization.
+
+---
+
+## 🗺 Project Diagram
+
+Below is a simplified view of the **Data Integration workflow**, representing how information flows from external sources through the integration and transformation stages:
+```
+[Wikipedia]        [DB-City]
+      ↓                  ↓
+   Data Extraction & Parsing (Java)
+              ↓
+       XML Normalization
+              ↓
+     Validation (DTD / XSD)
+              ↓
+   Querying (XPath / XQuery)
+              ↓
+     Transformation (XSLT)
+              ↓
+  Output: Integrated XML / HTML / Text
+```
+
+
+(If the image doesn’t load, check the PDF version in Data_Integration_Report/DataIntegration_Diagram.pdf.)
+
+
+---
+
 ## 📁 **Project Structure**
 
 - **DataIntegration_Project/** → Source code and XML processing logic  
@@ -32,13 +68,6 @@ The system consolidates country information into a structured XML document, ensu
 
 ---
 
-## 📚 **About**
-
-Developed for the **Data Integration and Information Systems** course at the **Instituto Superior de Engenharia de Coimbra (ISEC)**.  
-The project focuses on practical application of **data extraction, integration, and transformation techniques**, simulating a real-world data processing workflow.  
-
----
-
 ## 🧠 **Learning Outcomes**
 
 - Experience with **structured data representation (XML)**  
@@ -47,3 +76,12 @@ The project focuses on practical application of **data extraction, integration, 
 - Development of a **user-friendly data management interface**
 
 ---
+
+## 📚 **About**
+
+Developed for the **Data Integration and Information Systems** course at the **Instituto Superior de Engenharia de Coimbra (ISEC)**.  
+The project focuses on practical application of **data extraction, integration, and transformation techniques**, simulating a real-world data processing workflow.  
+
+---
+
+
